@@ -134,7 +134,12 @@ public with sharing class AccountServiceLayer {
         }
     }
 
-
+    /**
+     * @description Creates a default account if the user has access to create
+     *  the Account Object. Demonstrates simple usage of Security.stripInacessible(),
+     *  and DML with a try/catch block.
+     * @return Account
+     */
     public static Account createDefaultAccout(){
         Account acc = new Account();
         acc.Name = 'Default Account';
