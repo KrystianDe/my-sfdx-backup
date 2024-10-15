@@ -22,7 +22,7 @@ public with sharing class ApexClassUtilities {
         );
         Matcher matcher = patternForFindingGroupTagInHeader.matcher(klass.Body);
         matcher.find();
-        String groupName = '';
+        String groupName = 'test';
         try {
             groupName = matcher.group(1);
         } catch (StringException matcherException) {
